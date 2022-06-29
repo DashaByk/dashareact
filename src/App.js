@@ -1,25 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import Character from "./components/character";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <Character
+                name={'Bart'}
+                text={'Бартоломью Джо-Джо «Барт» Симпсон — герой мультипликационного сериала «Симпсоны». Наряду с Гомером, один из наиболее известных персонажей шоу. В списке пятидесяти лучших мультипликационных героев в истории по версии журнала TV Guide занимает 11-ю строчку совместно со своей сестрой Лизой'}
+                image={'https://upload.wikimedia.org/wikipedia/ru/2/29/Bart_Simpson.gif'}
+                alt={'Барт'}
+            />
+            <Character
+                name={'Liza'}
+                text={'Ли́за Мари́ Си́мпсон — героиня анимационного сериала «Симпсоны». Средний ребёнок в семье, восьмилетняя девочка, выделяющаяся среди остальных Симпсонов прежде всего своим умом и рассудительностью. Лиза как персонаж появилась из-под карандаша Мэтта Грейнинга в момент, когда он ожидал аудиенции в приёмной компании FOX'}
+                image={'https://upload.wikimedia.org/wikipedia/ru/e/ec/Lisa_Simpson.png'}
+                alt={'Лиза'}
+            />
+            <Character
+                name={'Marge'}
+                text={'Ма́рджори Жакли́н «Мардж» Си́мпсон — постоянный персонаж мультипликационного сериала «Симпсоны», её озвучивает Джулия Кавнер. Обычно носит зелёное платье, красные балетки, на шее — ожерелье из искусственного жемчуга и ездит на оранжевом универсале.'}
+                image={'https://upload.wikimedia.org/wikipedia/ru/thumb/0/0b/Marge_Simpson.png/217px-Marge_Simpson.png'}
+                alt={'Мардж'}
+            />
+            <Character
+                name={'Homer'}
+                text={'Гоме́р Джей Си́мпсон — один из главных героев мультсериала «Симпсоны» и отец в одноимённой семье. Озвучен Дэном Кастелланетой, впервые появился на телеэкране вместе с остальными членами его семьи в короткометражном мультфильме «Спокойной ночи!», показанном на «Шоу Трейси Ульман» 19 апреля 1987 года.'}
+                image={'https://www.sostav.ru/app/public/images/news/2015/12/18/Screenshot_2.jpg?rand=0.2807936074677855'}
+                alt={'Гомер'}
+            />
+
+        </div>
+    );
 }
 
 export default App;
+//
