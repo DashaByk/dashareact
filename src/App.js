@@ -1,11 +1,16 @@
+import React from "react";
+
+import FormUser from "./forms/Form.user";
+
+function App(){
 
 
-function App() {
-  return (
-    <div>
 
-    </div>
-  );
+    return (
+        <div>
+            <FormUser/>
+        </div>
+    );
 }
 
 export default App;
