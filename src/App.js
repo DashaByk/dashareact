@@ -1,6 +1,9 @@
 import React from "react";
 
 import FormUser from "./forms/Form.user";
+import {useForm} from "react-hook-form";
+import axios from "axios";
+import FormComments from "./forms/Form.comments";
 
 function App() {
 
@@ -11,7 +14,7 @@ function App() {
                 <FormUser/>
             </div>
             <div>
-
+                <FormComments/>
             </div>
         </div>
     );
